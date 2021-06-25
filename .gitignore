@@ -1,8 +1,8 @@
 #Automated compile and execution script
-compile.sh
+/compile.sh
 
 #Temporary practice files
-practice.cpp
+/practice.cpp
 
 # Prerequisites
 *.d
