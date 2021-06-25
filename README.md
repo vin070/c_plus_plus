@@ -1,1 +1,1 @@
-##A collection of Data structures and algorithm problem and its solution.
+### A collection of data structures and algorithm problem and its solution.
