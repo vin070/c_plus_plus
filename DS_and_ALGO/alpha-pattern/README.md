@@ -22,7 +22,7 @@ DDDD \
 EEEEE \
 FFFFFF  
 
-**SAMPLE INPUT 2:**
+**SAMPLE INPUT 2:** \
 7
 
 **SAMPLE OUTPUT 2** \
