@@ -1,9 +1,10 @@
 **PRINT THE FOLLOWING PATTERN FOR GIVEN NUMBER N** \
-N=4 \
-SSS*SSS \
-SS***SS \
-S*****S \
-******* \
+N=4 
+
+SSS\*SSS \
+SS\*\*\*SS \
+S\*\*\*\*\*S \
+\*\*\*\*\*\*\* 
 
 **INPUT FORMAT** \
 N (Total number of rows)
@@ -15,9 +16,9 @@ Pattern in N lines
 3
 
 **SAMPLE OUTPUT** \
-SS*SS \
-S***S \
-***** 
+SS\*SS \
+S\*\*\*S \
+\*\*\*\*\* 
 
 **TIME COMPLEXITY** \
 o(n^2)
