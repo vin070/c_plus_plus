@@ -25,4 +25,4 @@ Pattern in N lines
 78910111213 
 
 **TIME COMPLEXITY** \
-O(n2)
+O(n^2)

@@ -24,4 +24,4 @@ S 4 5 6 7 \
 Note S represent the space
 
 **TIME COMPLEXITY** \
-O(n2)
+O(n^2)
