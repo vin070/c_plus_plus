@@ -14,7 +14,5 @@ int main()
     else
       allowance = 1300;
     
-    long totalSalary = round((159.0 *baseSalary)/100 + allowance);
-    
-    std::cout<<totalSalary;
+    std::cout<<long(round((159.0 *baseSalary)/100 + allowance));
 }

@@ -1,5 +1,5 @@
 **Write a program to calculate the total salary of a person. The user has to enter the basic salary (an integer) and the grade (an uppercase character), and depending upon which the total salary is calculated as -** \
-totalSalary = basic + hra + da + allow – pf \
+totalSalary = basic + hra + da + allow – pf 
 
 **Where:** \
 hra   = 20% of basic \
@@ -28,6 +28,9 @@ Total Salary
 
 **SAMPLE OUTPUT 2** \
 11926700
+
+**TIME COMPLEXITY** \
+O(1)
 
 
 
