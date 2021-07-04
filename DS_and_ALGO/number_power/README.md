@@ -18,3 +18,6 @@ x^n (i.e. x raise to the power n)
 
 **SAMPLE OUTPUT** \
 81
+
+**TIME COMPLEXITY** \
+O(n)
