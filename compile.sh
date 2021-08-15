@@ -2,7 +2,7 @@
 #!/bin/bash
 FILENAME="practice.cpp"
 echo '---ENTER FILE NAME---'
-read FILENAME
+# read FILENAME
 echo '---COMPILING START---'
 g++ ${FILENAME}
 echo '---COMPILING DONE---'
