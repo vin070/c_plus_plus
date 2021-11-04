@@ -37,3 +37,6 @@ Fahrenheit to Celsius conversion table. One line for every Fahrenheit and Celsiu
 
 **TIME COMPLEXITY** \
 O((farenheit_end - farenheit_start + step+size)/step_size)
+
+**FORMULA USED** \
+F = (9/5) + 32;
