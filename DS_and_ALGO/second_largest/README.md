@@ -15,7 +15,7 @@ Output for every test case will be printed in a separate line.
 0 <= N <= 10^5\
 Time Limit: 1 sec
 
-**SAMPLE OUTPUT 1**\
+**SAMPLE INPUT 1**\
 1
 7
 2 13 4 1 3 6 28
@@ -23,7 +23,7 @@ Time Limit: 1 sec
 **SAMPLE OUTPUT 1**\
 13
 
-**SAMPLE OUTPUT 2**\
+**SAMPLE INPUT 2**\
 2
 2
 6 6
