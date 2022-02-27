@@ -5,9 +5,9 @@ a. First row(left to right)\
 b. Last column(top to bottom)\
 c. Last row(right to left)\
 d. First column(bottom to top)\
-Mind that every element will be printed only once.
-Refer to the Image:
-[Spiral print]](https://github.com/[vin070]/[C-plus-plus]/blob/[master]/assets/images/spiral_print.jpeg?raw=true)**
+Mind that every element will be printed only once.\
+Refer to the Image below.\
+[Spiral print]](https://github.com/vin070/C-plus-plus/blob/master/assets/images/spiral_print.jpeg?raw=true)**
 
 **INPUT FORMAT**\
 The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
