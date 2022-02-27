@@ -7,7 +7,7 @@ c. Last row(right to left)\
 d. First column(bottom to top)\
 Mind that every element will be printed only once.\
 Refer to the Image below.\
-[Spiral print]](https://github.com/vin070/C-plus-plus/blob/master/assets/images/spiral_print.jpeg?raw=true)**
+![spiral print pattern](../../assets/images/spiral_print.jpeg)**
 
 **INPUT FORMAT**\
 The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
@@ -23,14 +23,14 @@ Output for every test case will be printed in a seperate line.
 1 <= t <= 10^2\
 0 <= N <= 10^3\
 0 <= M <= 10^3\
-Time Limit: 1sec\
+Time Limit: 1sec
 
 **SAMPLE INPUT 1**\
-1\
-4 4\ 
-1 2 3 4\ 
-5 6 7 8\ 
-9 10 11 12\ 
+1 \
+4 4 \
+1 2 3 4 \
+5 6 7 8 \
+9 10 11 12 \
 13 14 15 16
 
 **SAMPLE OUTPUT 1**\
