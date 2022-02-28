@@ -7,7 +7,7 @@ c. Last row(right to left)\
 d. First column(bottom to top)\
 Mind that every element will be printed only once.\
 Refer to the Image below.\
-![spiral print pattern](../../assets/images/spiral_print.jpeg)**
+![spiral print pattern](/assets/images/spiral_print.jpeg)**
 
 **INPUT FORMAT**\
 The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
