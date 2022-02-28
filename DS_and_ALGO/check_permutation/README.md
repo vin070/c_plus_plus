@@ -1,6 +1,6 @@
 **Check Permutation**
 
-**For a given two strings, 'str1' and 'str2', check whether they are a permutation of each other or not.
+**For a given two strings, 'str1' and 'str2', check whether they are a permutation of each other or not.**
 
 **Permutations of each other definition**\
 Two strings are said to be a permutation of each other when either of the string's characters can be rearranged so that it becomes identical to the other one.\
@@ -26,7 +26,7 @@ Where N is the length of the input string.\
 Time Limit: 1 second
 
 **SAMPLE INPUT 1**\
-abcde
+abcde\
 baedc
 
 **SAMPLE OUTPUT 1**\
