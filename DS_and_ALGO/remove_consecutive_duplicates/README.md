@@ -1,4 +1,4 @@
-**Remove Consecutive Duplicates**\
+**Remove Consecutive Duplicates**
 
 For a given string(str), remove all the consecutive duplicate characters.\
 Example:\
