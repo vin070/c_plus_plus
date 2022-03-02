@@ -25,5 +25,5 @@ aaabbccdsa
 **SAMPLE OUTPUT 1** \
 a3b2c2dsa
 
-**TIME COMPLEXITY**
+**TIME COMPLEXITY**\
 O(n)
