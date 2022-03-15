@@ -12,10 +12,10 @@ Corresponding integer N (int, Eg. 1234)
 0 <= |S| <= 9\
 where |S| represents length of string S.
 
-**INPUT FORMAT 1**\
+**SAMPLE INPUT 1**\
 00001231
 
-**OUTPUT FORMAT 1**\
+**SAMPLE OUTPUT 1**\
 1231
 
 **TIME COMPLEXITY**\

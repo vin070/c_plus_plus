@@ -4,7 +4,7 @@
 void shift_right(char *input, int n){
     
     int length = strlen(input);
-    for(int i = length; i >= n; --i)
+    for(int i = length; i >= 0; --i)
         input[i + n] = input[i];
 }
 
@@ -13,7 +13,7 @@ void replacePi(char *input) {
         return;
 
     else if(input[0] == 'p' && input[1] == 'i') {
-        shift_right(input, 2);
+        shift_right(input + 2, 2);
         input[0] = '3';
         input[1] = '.';
         input[2] = '1';
