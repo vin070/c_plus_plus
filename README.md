@@ -4,4 +4,4 @@ Topic covered
 - Pattern
 - Recursion
 - Searching and sorting
-- string
+- String
