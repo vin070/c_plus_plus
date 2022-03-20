@@ -39,18 +39,18 @@ void merge_two_sorted_array(int *const input, int const &start_index, int const 
 
     delete [] temp_array; 
 }
-void mergeSort(int * const input, int const start_index, int const end_index){
+void merge_sort(int * const input, int const start_index, int const end_index){
     if(start_index >= end_index)
         return;
     
     int mid = (start_index + end_index)/2;
-    mergeSort(input, start_index, mid);
-    mergeSort(input, mid + 1, end_index);
+    merge_sort(input, start_index, mid);
+    merge_sort(input, mid + 1, end_index);
     merge_two_sorted_array(input, start_index, end_index, mid);  
 }
 
-void mergeSort(int * const input, int length) {
-    mergeSort(input, 0, length - 1); 
+void merge_sort(int * const input, int length) {
+    merge_sort(input, 0, length - 1); 
 }
 
 int main() {
@@ -62,7 +62,7 @@ int main() {
   for(int i= 0; i < length; ++i)
     std::cin >> input[i];
     
-  mergeSort(input, length);
+  merge_sort(input, length);
   for(int i = 0; i < length; i++)
     std::cout << input[i] << " ";
 
