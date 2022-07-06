@@ -5,3 +5,4 @@ Topic covered
 - Recursion
 - Searching and sorting
 - String
+- DP
