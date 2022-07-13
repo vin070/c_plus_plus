@@ -27,4 +27,4 @@ ce\
 cf
 
 **TIME COMPLEXITY**\
-T(n) = 4^n where n is number of digit.
+T(n) = O(4^n) where n is number of digit.
