@@ -41,7 +41,6 @@ int main() {
   std::cin >> k;
 
   int size = subset_sum_to_k(input, length, output, k);
-  std::cout << "size = " << size << '\n';
   for (int i = 0; i < size; i++) {
     for (int j = 1; j <= output[i][0]; j++) std::cout << output[i][j] << " ";
     std::cout << std::endl;
