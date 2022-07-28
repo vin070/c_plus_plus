@@ -8,7 +8,7 @@ unsigned long power(int x, int n) {
   return x * power(x, n - 1);
 }
 
-int allStrings(std::string input, int k, std::string output[]) {
+int all_strings(std::string input, int k, std::string output[]) {
 
   if (k == 0) {
     output[0] = "";
@@ -20,7 +20,7 @@ int allStrings(std::string input, int k, std::string output[]) {
   for (int i = 0; i < input_len; ++i) {
 
     std::string *small_ans = new std::string[power(input_len, k - 1)];
-    int small_ans_len = allStrings(input, k - 1, small_ans);
+    int small_ans_len = all_strings(input, k - 1, small_ans);
 
     for (int j = 0; j < small_ans_len; ++j)
       output[j + ans] = input[i] + small_ans[j];
@@ -39,7 +39,7 @@ int main() {
   std::cin >> k;
 
   std::string *output = new std::string[power(input.length(), k)];
-  int count = allStrings(input, k, output);
+  int count = all_strings(input, k, output);
   for (int i = 0; i < count && i < 1000; i++)
     std::cout << output[i] << std::endl;
 
