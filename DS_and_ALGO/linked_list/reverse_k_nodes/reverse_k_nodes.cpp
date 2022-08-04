@@ -166,24 +166,31 @@ public:
 
     return linked_list::find_node(head->get_next(), start_index + 1, data);
   }
+};
 
-  static linked_list *reverse_linked_list(linked_list *head) {
-    if (!head || !head->get_next())
-      return head;
-    linked_list *ans = reverse_linked_list(head->get_next());
+struct circular_linked_list {
+  linked_list *head = NULL;
+  linked_list *tail = NULL;
 
-    linked_list *temp = ans;
-    while (temp->get_next())
-      temp = temp->get_next();
-
-    head->set_next(NULL);
-    temp->set_next(head);
-    return ans;
-    //TODO: Improve time complexity from O(n^2) to O(n)
+  circular_linked_list(linked_list *head, linked_list *tail) {
+    this->head = head;
+    this->tail = tail;
   }
 };
 
-linked_list *getListAfterReverseOperation(linked_list *head, int const &b_size,
+circular_linked_list reverse_linked_list(linked_list *head) {
+  if (!head || !head->get_next()) {
+    circular_linked_list new_node(head, head);
+    return new_node;
+  }
+  circular_linked_list small_ans = reverse_linked_list(head->get_next());
+  head->set_next(NULL);
+  small_ans.tail->set_next(head);
+  small_ans.tail = head;
+  return small_ans;
+}
+
+linked_list *get_list_after_reverse_operation(linked_list *head, int const &b_size,
                                           int const *const b) {
   int len = linked_list::length(head);
   int ele_to_skip = 0;
@@ -203,7 +210,7 @@ linked_list *getListAfterReverseOperation(linked_list *head, int const &b_size,
     linked_list *subset_tail_next = subset_tail->get_next();
     // Reverse subset
     subset_tail->set_next(NULL);
-    linked_list *ans = linked_list::reverse_linked_list(subset_head);
+    linked_list *ans = reverse_linked_list(subset_head).head;
     if (i == 0)
       head = ans;
     if (prev_subset_tail)
@@ -223,7 +230,7 @@ int main() {
   for (int i = 0; i < block_reverse_size; ++i)
     std::cin >> block_reverses[i];
 
-  head = getListAfterReverseOperation(head, block_reverse_size, block_reverses);
+  head = get_list_after_reverse_operation(head, block_reverse_size, block_reverses);
   linked_list::print(head);
 
   delete[] block_reverses;

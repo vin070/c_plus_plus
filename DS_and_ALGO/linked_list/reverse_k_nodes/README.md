@@ -55,5 +55,5 @@ Time Limit: 1 sec
 1 2 3 4 5 -1
 
 **TIME COMPLEXITY**\
-T(n) = O(b*n^2) where n is length of linked list and b is size of block array.
+T(n) = O(b*n) where n is length of linked list and b is size of block array.
 
