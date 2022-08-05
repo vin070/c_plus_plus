@@ -43,7 +43,7 @@ Time Limit: 1sec
 
 
 **TIME COMPLEXITY**\
-T(n) = (minimum of n1 and n2) where n1 is length of 1^st linked list and n2 is length of 2^nd linked list.
+T(n) = (minimum of n1 and n2) where n1 is length of 1<sup>st</sup> linked list and n2 is length of 2<sup>nd</sup> linked list.
 
 **SPACE COMPLEXITY**\
 S(n) = O(1)
