@@ -50,46 +50,58 @@ public:
   }
 };
 
-linked_list *swap_nodes(linked_list *head, int const &i, int const &j) {
-
-  linked_list *temp = head;
-  linked_list *i_node_prev = NULL;
-  linked_list *j_node_prev = NULL;
-  for (int k = 0, l = 0; (k < i || l < j) && temp;) {
-    if (i - 1 == k)
-      i_node_prev = temp;
-    if (j - 1 == l)
-      j_node_prev = temp;
-    temp = temp->get_next();
-    ++k;
-    ++l;
+linked_list *swap_nodes(linked_list *head, int i, int j) {
+  if (i > j) {
+    int temp = i;
+    i = j;
+    j = temp;
   }
+  linked_list *i_node_prev = NULL;
+  linked_list *i_node = NULL;
+  linked_list *j_node_prev = NULL;
+  linked_list *j_node = NULL;
+  linked_list *temp = head;
+  for (int k = 0, l = 0; (k <= i || l <= j) && temp; ++k, ++l) {
+    if (k == i - 1)
+      i_node_prev = temp;
+    else if (k == i)
+      i_node = temp;
 
-  if (i_node_prev && i_node_prev) {
+    if (l == j - 1)
+      j_node_prev = temp;
+    else if (l == j)
+      j_node = temp;
+
+    temp = temp->get_next();
+  }
+  if (i != 0 && j != 0 && j - i != 1) {
     linked_list *temp = i_node_prev->get_next();
     i_node_prev->set_next(j_node_prev->get_next());
     j_node_prev->set_next(temp);
 
-    temp = i_node_prev->get_next()->get_next();
-    i_node_prev->get_next()->set_next(j_node_prev->get_next()->get_next());
-    j_node_prev->get_next()->set_next(temp);
+    temp = i_node->get_next();
+    i_node->set_next(j_node->get_next());
+    j_node->set_next(temp);
     return head;
-  } else if (i_node_prev) {
-    linked_list *temp1 = i_node_prev->get_next();
-    linked_list *temp = head->get_next();
-    i_node_prev->set_next(head);
-    head->set_next(temp1->get_next());
-    temp1->set_next(temp);
-    return temp1;
-  } else if (j_node_prev) {
-    linked_list *temp1 = j_node_prev->get_next();
-    linked_list *temp = head->get_next();
+  } else if (i == 0 && j > 1) {
     j_node_prev->set_next(head);
-    head->set_next(temp1->get_next());
-    temp1->set_next(temp);
-    return temp1;
-  } else
+
+    linked_list *temp = i_node->get_next();
+    i_node->set_next(j_node->get_next());
+    j_node->set_next(temp);
+    return j_node;
+  } else if (i == 0 && j == 1) {
+    i_node->set_next(j_node->get_next());
+    j_node->set_next(i_node);
+    return j_node;
+  } else if (j - i == 1) {
+    i_node_prev->set_next(j_node);
+    i_node->set_next(j_node->get_next());
+    j_node->set_next(i_node);
     return head;
+  }
+
+  return head;
 }
 
 int main() {
