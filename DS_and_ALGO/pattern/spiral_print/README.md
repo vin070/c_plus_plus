@@ -10,7 +10,7 @@ Refer to the Image below.\
 ![spiral print pattern](/assets/images/spiral_print.jpeg)**
 
 **INPUT FORMAT**\
-The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
+The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.\
 First line of each test case or query contains two integer values, 'N' and 'M', separated by a single space. They represent the 'rows' and 'columns' respectively, for the two-dimensional array/list.\
 Second line onwards, the next 'N' lines or rows represent the ith row values.\
 Each of the ith row constitutes 'M' column values separated by a single space.
