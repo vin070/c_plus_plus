@@ -1,6 +1,6 @@
-**Queue using array**
+**Queue using linked list**
 
-Implement a Queue Data Structure specifically to store integer data using dynamic array.\
+Implement a Queue Data Structure specifically to store integer data using singly linked list.\
 The data members should be private.\
 You need to implement the following public functions:
 1. Constructor:
@@ -62,8 +62,7 @@ Time Limit: 1 second
 -1
 
 **TIME COMPLEXITY**\
-T(n) = O(n) for push operation where n is the size of queue before push operation.\
-       O(1) for other operation.
+T(n) = O(1).
 
 **SPACE COMPLEXITY**\
 S(n) = O(1)
