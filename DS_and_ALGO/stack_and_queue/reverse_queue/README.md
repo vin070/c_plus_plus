@@ -2,10 +2,10 @@
 
 You have been given a queue that can store integers as the data. You are required to write a function that reverses the populated queue itself without using any other data structures.
 
-Normal queue
+Normal queue\
 ![Normal queue](/assets/images/queue.png)
 
-Reverse queue
+Reverse queue\
 ![Reverse queue](/assets/images/reverse_queue.png)
 
 **INPUT FORMAT**\
