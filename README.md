@@ -6,3 +6,8 @@ Topic covered
 - Searching and sorting
 - String
 - DP
+- Stack
+- Queue
+- Linked list
+- OOPS
+- Tree
