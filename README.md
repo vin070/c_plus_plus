@@ -11,3 +11,4 @@ Topic covered
 - Linked list
 - OOPS
 - Tree
+- Binary tree
