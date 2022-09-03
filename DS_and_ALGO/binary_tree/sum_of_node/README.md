@@ -1,4 +1,4 @@
-**Sum Of Nodes**\
+**Sum Of Nodes**
 
 For a given Binary Tree of integers, find and return the sum of all the nodes data.
 
