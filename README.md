@@ -12,3 +12,4 @@ Topic covered
 - OOPS
 - Tree
 - Binary tree
+- Binary search tree
