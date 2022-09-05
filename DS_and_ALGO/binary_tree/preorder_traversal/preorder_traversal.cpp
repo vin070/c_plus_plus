@@ -62,7 +62,7 @@ public:
     if (!root)
       return;
 
-    std::cout << root->data << " ";
+    std::cout << root->get_data() << " ";
     binary_tree<T>::preorder_traversal(root->get_left_node());
     binary_tree<T>::preorder_traversal(root->get_right_node());
   }

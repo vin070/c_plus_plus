@@ -58,13 +58,13 @@ public:
     return root;
   }
 
-  static void preorder_traversal(binary_tree<T> *root) {
+  static void postorder_traversal(binary_tree<T> *root) {
     if (!root)
       return;
 
-    binary_tree<T>::preorder_traversal(root->get_left_node());
-    binary_tree<T>::preorder_traversal(root->get_right_node());
-    std::cout << root->data << " ";
+    binary_tree<T>::postorder_traversal(root->get_left_node());
+    binary_tree<T>::postorder_traversal(root->get_right_node());
+    std::cout << root->get_data() << " ";
   }
 
   ~binary_tree() {
@@ -75,7 +75,7 @@ public:
 
 int main() {
   binary_tree<int> *root = binary_tree<int>::take_input_levelwise();
-  binary_tree<int>::preorder_traversal(root);
+  binary_tree<int>::postorder_traversal(root);
   delete root;
   return 0;
 }
