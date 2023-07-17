@@ -12,7 +12,7 @@ void swap_values(int *array, int i, int j){
      array[j] = temp;
 }
 
-int partition_array(int *const input, int const &start_index, int const &end_index){
+int partition_array(int *const input, int const &start_index, int const &end_index) {
     int partition_index = start_index;
     for(int i = start_index; i <= end_index; ++i) { 
         if(input[i] < input[start_index])

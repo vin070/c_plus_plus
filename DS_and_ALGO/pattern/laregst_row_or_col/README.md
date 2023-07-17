@@ -27,12 +27,12 @@ Time Limit: 1sec
 
 **SAMPLE INPUT1**\
 1\
-2 2\ 
+2 2\
 1 1\
 1 1
 
 **SAMPLE OUTPUT1**\
-row 0 2\
+row 0 2
 
 **TIME COMPLEXITY**\
 O(rows*column)

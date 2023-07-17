@@ -13,3 +13,8 @@ Topic covered
 - Tree
 - Binary tree
 - Binary search tree
+
+### Theoritical topic 
+- Vector
+- Iterator
+- algo library

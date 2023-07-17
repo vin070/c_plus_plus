@@ -34,4 +34,4 @@ Time Limit: 1sec
 1 3 2
 
 **TIME COMPLEXITY** \
-O((3/2)*(array1_length + array2_length+.......t times))
+O(n) = T(n/2)
