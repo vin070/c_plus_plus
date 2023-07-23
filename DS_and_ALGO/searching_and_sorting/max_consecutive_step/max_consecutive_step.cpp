@@ -16,21 +16,20 @@ void take_input(std::vector<int>& arr, int const& n) {
 */
 void find_step(std::vector<int>& v) {
     int max_step = 0;
-    for (int i = 0; i < v.size() - 1;) {
-        int new_step = 0, j = i;
-        for (; j < v.size() - 1; ++j) {
-            if (v.at(j) < v.at(j + 1)) {
-                ++new_step;
-                ++i;
-            }
-            else {
-                break;
-            }
+    int curr_max = 0;
+    for (int i = 0; i < v.size() - 1; ++i) {
+        if (v.at(i + 1) > v.at(i)) {
+            ++curr_max;
         }
-        if (new_step > max_step) {
-            max_step = new_step;
+        else {
+            if (curr_max > max_step) {
+                max_step = curr_max;
+            }
+            curr_max = 0;
         }
-        i = j + 1;
+    }
+    if (curr_max > max_step) {
+        max_step = curr_max;
     }
     std::cout << max_step << '\n';
 }
