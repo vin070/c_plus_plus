@@ -2,8 +2,13 @@
 #include<cmath>
 #include<vector>
 
+#ifndef min_val
 #define min_val -1001
+#endif
+
+#ifndef max_val
 #define max_val 1001
+#endif
 
 /**
  * https://leetcode.com/problems/maximum-product-of-three-numbers/description/?source=submission-noac
