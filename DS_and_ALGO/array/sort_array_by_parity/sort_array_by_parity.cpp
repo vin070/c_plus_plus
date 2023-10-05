@@ -12,10 +12,7 @@ std::vector<int> sort_array_by_parity(std::vector<int>& nums) {
             std::swap(nums.at(odd_index), nums.at(even_index));
         }
 
-        if (nums.at(even_index) % 2 != 0) {
-            ++even_index;
-        }
-        else if (even_index <= odd_index) {
+        if (nums.at(even_index) % 2 != 0 || even_index <= odd_index) {
             ++even_index;
         }
 
