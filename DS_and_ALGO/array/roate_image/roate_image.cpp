@@ -25,7 +25,7 @@ void print_2D_array(std::vector<std::vector<int>>& matrix) {
 
 /**
  * https://leetcode.com/problems/rotate-image/
- * T(n) = O(n)
+ * T(n) = O(n * n)
  * S(n) = O(1)
 */
 void rotate_by_90_deg(std::vector<std::vector<int>>& matrix) {
