@@ -10,6 +10,11 @@ bool is_vowel(const char str) {
     return false;
 }
 
+/**
+ * https://leetcode.com/problems/reverse-vowels-of-a-string/
+ * T(n) = O(n)
+ * S(n) = O(1)
+*/
 void reverse_only_vowels(std::string* str) {
     for (int i = 0, j = str->length() - 1; i < j;) {
         if (is_vowel(str->at(i)) && is_vowel(str->at(j))) {
