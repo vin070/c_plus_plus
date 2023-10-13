@@ -1,11 +1,7 @@
 #include<iostream>
 #include<cstring>
+#include<algorithm>
 
-void reverse_str(std::string& str) {
-    for (int i = 0, j = str.size() - 1; i < j; ++i, --j) {
-        std::swap(str[i], str[j]);
-    }
-}
 /**
  * https://leetcode.com/problems/add-strings/
  * T(n) = O(n)
@@ -31,9 +27,10 @@ auto add_num(std::string const& num_1, std::string const& num_2) {
     if (carry) {
         ans.push_back((char)(48 + carry));
     }
-    reverse_str(ans);
+    std::reverse(ans.begin(), ans.end());
     return ans;
 }
+
 int main() {
     std::string num_1;
     std::string num_2;
