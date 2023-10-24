@@ -24,16 +24,19 @@ auto find_distinct_pair_with_sum_k(std::vector<int>& vect, int const& sum) {
       ++i;
       --j;
     }
-    else if (vect.at(i) + vect.at(j) == sum) {
+    else if (vect.at(i) + vect.at(j) > sum) {
+      --j;
+    }
+    else if (vect.at(i) + vect.at(j) < sum) {
+      ++i;
+    }
+    else {
       std::pair<int, int> pair(vect.at(i), vect.at(j));
       ans.push_back(pair);
       prev = vect.at(i);
       next = vect.at(j);
       ++i;
       --j;
-    }
-    else {
-      vect.at(i) <= vect.at(j) ? ++i : --j;
     }
   }
   return ans;
